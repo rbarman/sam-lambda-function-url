@@ -1,6 +1,6 @@
-API with AWS Lambda Function URL
+# README
 
-Initially created with AWS SAM cli
+Build an API with AWS Lambda Function URLs. Automated with SAM CLI and Lambda Powertools
 
 # Steps
 
@@ -24,5 +24,7 @@ Initially created with AWS SAM cli
 
 # Resources
 
-* https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/what-is-sam.html
+* Lambda Function URL: https://docs.aws.amazon.com/lambda/latest/dg/urls-configuration.html
+* Lambda Powertools: https://docs.powertools.aws.dev/lambda/python/latest/
+* SAM CLI: https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/what-is-sam.html
 * https://aws.amazon.com/serverless/serverlessrepo/
