@@ -26,7 +26,7 @@ Build an API with AWS Lambda Function URLs. Automated with SAM CLI and Lambda Po
 
 * get deployed function url
     * ./get_lambda_url.sh my-stack-name
-* curl "function_url?my_id=1234"
+* curl "function_url/?my_id=1234"
 
 
 # Resources
