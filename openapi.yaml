@@ -1,0 +1,52 @@
+openapi: 3.0.3
+info:
+  title: API title
+  version: 1.0.0
+  description: API description
+
+servers:
+  - url: lambda function url here
+    description: server
+
+paths:
+  /search:
+    get:
+      summary: Search for a person by id
+      parameters:
+        - name: id
+          in: query
+          required: true
+          description: The id of the person to search for
+          schema:
+            type: string
+      responses:
+        '200':
+          description: The person
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Person'
+        '400':
+          description: Id parameter is required
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+components:
+  schemas:
+    Person:
+      type: object
+      properties:
+        id:
+          type: string
+          description: The id of the person
+      required:
+        - id
+    ErrorResponse:
+      type: object
+      properties:
+        message:
+          type: string
+          description: The error message
+      required:
+        - message
